@@ -1,0 +1,122 @@
+
+.headerText{
+    font-family: "Kanit", sans-serif;
+        font-style: normal;
+}
+.linksMenu:hover{
+    text-decoration: underline;
+}
+.encabezado{
+    z-index: 2;
+    color: white;
+    background: rgba(0, 0, 0, 0.9); 
+    padding: 40px;
+}
+.headerText{
+    margin-left: 6px;
+}
+.carousel {
+    z-index: 1;
+}
+
+.menu{
+    margin-left: auto;
+}
+
+.serviciosContainer{
+    margin-bottom: 50px;
+}
+.row{
+    justify-content: center;
+}
+.card-title{
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+#botonServicios{
+    background-color: #027eb4;
+    border-color: #027eb4;
+    margin-top: 30px;
+}
+#botonServicios:hover{
+    background-color: #01486c;
+    border-color: #01486c;
+}
+
+.imagenPrincipal{
+    height: 90vh;
+    display: flex;
+}
+
+.imagenNosotros{
+    background-image: url("./img/nosotros.jpg");
+    background-position-x: center;
+    height: 50vh;
+}
+
+.imagenInicio{
+    background-image: url("./img/imagenInicio.jpg");
+    background-position-x: center;
+    height: 50vh;
+}
+
+.imagenPropuesta{
+    background-image: url("./img/propuesta.png");
+    background-position-x: center;
+    background-size: cover;
+    height: 50vh;
+}
+.imagenContacto{
+    background-image: url("./img/contacto.jpg");
+    background-position-x: center;
+    height: 50vh;
+}
+.itemsLista{
+    margin-left: 20px;
+}
+.footer{
+    background-color: #027eb4
+}
+.mapaContacto{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .imagenPrincipal{
+        height: auto;
+        display: block;
+    }
+    .encabezado{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .tituloEncabezado{
+        font-size: 1.3rem;
+    }
+    .textoEncabezado{
+        display: none;
+    }
+    #botonServicios{
+        width: 100%;   
+    }
+}
+@media screen and (max-width: 500px){
+    .tituloEncabezado{
+        font-size: 1.4em;
+    }
+    .encabezado{
+        padding: 30px;
+    }
+
+}
+@media screen and (max-width: 360px){
+    .tituloEncabezado{
+        font-size: 1.2rem;
+    }
+    .encabezado{
+        padding: 15px;
+    }
+}
