@@ -69,6 +69,13 @@
     margin-bottom: 50px;
 }
 
+/* .imagenIntegrantes{
+    background-image: url("./img/imagenInicio.jpg");
+    background-position-x: center;
+    height: 30vh;
+    background-size: cover;
+} */
+
 #botonIntegrantes{
     background-color: #ED8618;
     border-color: #ED6118;
