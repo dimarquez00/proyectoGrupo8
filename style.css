@@ -84,7 +84,7 @@
 #botonIntegrantes{
     background-color: var(--color-principal);
     border-color: var(--color-secundario);
-    margin-top: 30px;
+    margin-top: 15px;
 }
 #botonIntegrantes:hover{
     background-color: var(--color-secundario);
