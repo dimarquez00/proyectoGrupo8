@@ -1,3 +1,9 @@
+/* Variables */
+:root {
+    --color-principal: #ED8618; 
+    --color-secundario: #ED6118; 
+}
+
 /* Header  */
 .headerText{
     font-family: "Kanit", sans-serif;
@@ -22,7 +28,9 @@
     padding-top: 10px;
     padding-bottom: 6px;
 }
-
+.containerDefault{
+    margin-bottom: 50px;
+}
 /* Main Inicio */
 .contenedorPrincipal{
     height: 86vh;
@@ -65,9 +73,6 @@
 }
 
 /* Main Integrantes */
-.integrantesContainer{
-    margin-bottom: 50px;
-}
 
 /* .imagenIntegrantes{
     background-image: url("./img/imagenInicio.jpg");
@@ -77,13 +82,55 @@
 } */
 
 #botonIntegrantes{
-    background-color: #ED8618;
-    border-color: #ED6118;
+    background-color: var(--color-principal);
+    border-color: var(--color-secundario);
     margin-top: 30px;
 }
 #botonIntegrantes:hover{
-    background-color: #ED6118;
-    border-color: #ED6118;
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+/* Main Avances */
+.containerAvances{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.imagenAvances{
+    background-image: url("./img/imagenInicio.jpg");
+    background-position-x: center;
+    height: 25vh;
+    background-size: cover;
+}
+#botonAvances{
+    background-color: var(--color-principal);
+    border-color: var(--color-secundario);
+    width: 125px;
+    margin-bottom: 20px;
+}
+#botonAvances:hover{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+/* Main Juegos */
+.containerJuegos{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+#botonJuegos{
+    background-color: var(--color-principal);
+    border-color: var(--color-secundario);
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonJuegos:hover{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
 }
 
 /* Footer */
