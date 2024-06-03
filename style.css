@@ -7,17 +7,15 @@
 /* Header  */
 .headerText{
     font-family: "Kanit", sans-serif;
-        font-style: normal;
+    font-style: normal;
+    margin-left: 6px;
+}
+.menu{
+    font-weight: 500;
+    margin-left: auto;
 }
 .linksMenu:hover{
     text-decoration: underline;
-}
-.headerText{
-    margin-left: 6px;
-}
-
-.menu{
-    margin-left: auto;
 }
 
 /* Main */
@@ -46,7 +44,6 @@
     color: white;
     width: 60%;
     height: 50%;
-    /* margin: 30px; */
     background: rgba(227, 118, 16, 0.9); 
     padding: 20px;
     display: flex;
@@ -74,12 +71,12 @@
 
 /* Main Integrantes */
 
-/* .imagenIntegrantes{
+.imagenIntegrantes{
     background-image: url("./img/imagenInicio.jpg");
     background-position-x: center;
     height: 30vh;
     background-size: cover;
-} */
+}
 
 #botonIntegrantes{
     background-color: var(--color-principal);
@@ -140,20 +137,22 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 1440px){
-}
-
 @media screen and (max-width: 1024px){
+    .contenedorSecundario{
+        width: 80%;
+    }
 }
-
 @media screen and (max-width: 720px){
     #botonIntegrantes{
         width: 100%;   
     }
-}
-@media screen and (max-width: 500px){
-
-}
-@media screen and (max-width: 360px){
-
+    .contenedorSecundario{
+        flex-direction: column;
+        height: 60%;
+    }
+    .contenedorFoto{
+        max-width: 350px;
+        width: 80%;
+        margin: auto;
+    }
 }
