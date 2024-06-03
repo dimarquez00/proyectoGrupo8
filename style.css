@@ -76,7 +76,7 @@
 .imagenIntegrantes{
     background-image: url("./img/imagenInicio.jpg");
     background-position-x: center;
-    height: 30vh;
+    height: 25vh;
     background-size: cover;
 }
 
@@ -130,6 +130,9 @@
 #botonJuegos:hover{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
+}
+.textJuegos{
+    font-size: 1.04rem;
 }
 
 /* Footer */
