@@ -42,7 +42,7 @@
 
 .contenedorSecundario{
     color: white;
-    width: 60%;
+    width: 50%;
     height: 50%;
     background: rgba(227, 118, 16, 0.9); 
     padding: 20px;
@@ -52,13 +52,15 @@
 }
 
 .contenedorFoto{
-    width: 40%;
-    margin-right: 40px;
+    width: 50%;
+    margin-right: 20px;
 }
 .contenedorFoto img{
     width: 100%;
 }
 .contenedorTexto{
+    margin-left: 20px;
+    /* width: 50%; */
     font-size: 1.2rem;
 }
 .contenedorTexto p a{
@@ -154,5 +156,11 @@
         max-width: 350px;
         width: 80%;
         margin: auto;
+    }
+}
+@media screen and (max-width: 425px){
+    .contenedorSecundario{
+        width: 90%;
+        padding: 10px;
     }
 }
