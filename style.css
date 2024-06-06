@@ -53,7 +53,7 @@
     height: 86vh;
     background-image: url("./img/fondo.png");
     background-position-x: center;
-    /* background-size: cover; */
+    background-size: cover;
     background-size: 100% 100%;
     /* display: flex; */
     /* justify-content: center; */
@@ -70,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 5%;
 }
 
 .contenedorFoto{
@@ -95,6 +95,28 @@
 
 /* Main Integrantes */
 
+.contenedorIntegrantesPrincipal{
+    height: 86vh;
+    background-image: url("./img/fondo.png");
+    background-position-x: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorIntegrantesSecundario{
+    color: white;
+    width: 70%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.53); 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .imagenIntegrantes{
     background-image: url("./img/imagenInicio.jpg");
     background-position-x: center;
@@ -103,13 +125,14 @@
 }
 
 #botonIntegrantes{
-    background-color: var(--color-principal);
-    border-color: var(--color-secundario);
-    margin-top: 15px;
-}
-#botonIntegrantes:hover{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
+    margin-top: 15px;
+    color: black;
+}
+#botonIntegrantes:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
 }
 
 /* Main Avances */
@@ -168,8 +191,24 @@
     .contenedorSecundario{
         width: 80%;
     }
+    .contenedorIntegrantesSecundario{
+        color: white;
+        width: 80%;
+        height: 70%;
+    }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 900px){
+    .contenedorSecundario{
+        width: 80%;
+    }
+    .contenedorIntegrantesSecundario{
+        color: white;
+        width: 90%;
+        height: 70%;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 730px){
     #navbarNav{
         margin-left: 10px;
     }
@@ -184,6 +223,14 @@
         max-width: 350px;
         width: 80%;
         margin: auto;
+    }
+    .contenedorIntegrantesPrincipal{
+        height: auto;
+        padding: 20px;
+    }
+    .contenedorIntegrantesSecundario{
+        height: auto;
+        width: auto;
     }
 }
 @media screen and (max-width: 425px){
