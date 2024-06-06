@@ -2,7 +2,7 @@
 :root {
     --color-principal: #15120E; 
     --color-secundario: #ffaf02; 
-    --color-terciario: #ED6118; 
+    --color-terciario: #FF8B02; 
 }
 
 /* Header  */
@@ -136,45 +136,104 @@
 }
 
 /* Main Avances */
+
+.contenedorAvancesPrincipal{
+    height: auto;
+    padding: 20px;
+    background-image: url("./img/fondo.png");
+    background-position-x: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorAvancesSecundario{
+    color: white;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.53); 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .containerAvances{
     text-align: center;
     width: 50%;
     margin-bottom: 10px;
 }
 .imagenAvances{
-    background-image: url("./img/imagenInicio.jpg");
     background-position-x: center;
-    height: 25vh;
+    height: 90%;
+    width: auto;
     background-size: cover;
 }
 #botonAvances{
-    background-color: var(--color-principal);
-    border-color: var(--color-secundario);
-    width: 125px;
-    margin-bottom: 20px;
-}
-#botonAvances:hover{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
+    width: 125px;
+    color: black;
+}
+#botonAvances:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+}
+#logoAvances{
+    width: 450px;
+    height: 400px;
+}
+#divPaletaImagenes{
+
+}
+.paletaImagenes{
+    width: 15%;
+    margin: 0 10px;
+    /* height: 70px; */
 }
 
 /* Main Juegos */
+.contenedorJuegosPrincipal{
+    height: 86vh;
+    background-image: url("./img/fondo.png");
+    background-position-x: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorJuegosSecundario{
+    color: white;
+    width: 70%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.53); 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .containerJuegos{
     text-align: center;
     width: 50%;
     margin-bottom: 10px;
 }
 #botonJuegos{
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
     border-color: var(--color-secundario);
+    color: black;
     width: 125px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
 #botonJuegos:hover{
-    background-color: var(--color-secundario);
-    border-color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
 }
 .textJuegos{
     font-size: 1.04rem;
@@ -196,6 +255,9 @@
         width: 80%;
         height: 70%;
     }
+    .contenedorJuegosSecundario{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 900px){
     .contenedorSecundario{
@@ -206,6 +268,9 @@
         width: 90%;
         height: 70%;
         padding: 5px;
+    }
+    .contenedorJuegosSecundario{
+        height: 90%;
     }
 }
 @media screen and (max-width: 730px){
@@ -224,13 +289,16 @@
         width: 80%;
         margin: auto;
     }
-    .contenedorIntegrantesPrincipal{
+    .contenedorIntegrantesPrincipal, .contenedorJuegosPrincipal{
         height: auto;
         padding: 20px;
     }
-    .contenedorIntegrantesSecundario{
+    .contenedorIntegrantesSecundario, .contenedorJuegosSecundario{
         height: auto;
         width: auto;
+    }
+    .contenedorJuegosSecundario{
+        padding: 0;
     }
 }
 @media screen and (max-width: 425px){
