@@ -82,7 +82,6 @@
 }
 .contenedorTexto{
     margin-left: 20px;
-    /* width: 50%; */
     font-size: 1.2rem;
 }
 .contenedorTexto p a{
@@ -141,10 +140,6 @@
 .contenedorAvancesPrincipal{
     height: auto;
     padding: 20px;
-    /* background-image: url("./img/fondo.png");
-    background-position-x: center;
-    background-size: cover;
-    background-size: 100% 100%; */
     background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
@@ -193,7 +188,6 @@
 .paletaImagenes{
     width: 10%;
     margin: 0 10px;
-    /* height: 70px; */
 }
 
 /* Main Juegos */
@@ -251,7 +245,7 @@
 /* Media Queries */
 @media screen and (max-width: 1024px){
     .contenedorSecundario{
-        width: 80%;
+        width: 60%;
     }
     .contenedorIntegrantesSecundario{
         color: white;
@@ -278,8 +272,14 @@
         margin-left: 10px;
         margin-bottom: 10px;
     }
+    .contenedorPrincipal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .contenedorSecundario{
         width: 80%;
+        margin-left: 0;
     }
     .contenedorIntegrantesSecundario{
         color: white;
@@ -310,9 +310,6 @@
     #logoAvances{
         width: 60%;
         height: 60%;
-    }
-    .paletaImagenes{
-        /* width: 30%; */
     }
     #divPublicoObjetivo{
         display: flex;
