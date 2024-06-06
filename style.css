@@ -1,6 +1,7 @@
 /* Variables */
 :root {
-    --color-principal: #ED8618; 
+    --color-principal: #15120E; 
+    --color-principal2: #ED8618; 
     --color-secundario: #ED6118; 
 }
 
@@ -9,6 +10,20 @@
     font-family: "Kanit", sans-serif;
     font-style: normal;
     margin-left: 6px;
+    /* padding: 0px; */
+}
+.navbar{
+    padding: 0;
+}
+#barraMenu{
+    background-color: var(--color-principal);
+    padding: 10px;
+}
+#barraMenu a{
+    color: white;
+}
+#barraMenu ul{
+    color: white;
 }
 .menu{
     font-weight: 500;
@@ -32,7 +47,7 @@
 /* Main Inicio */
 .contenedorPrincipal{
     height: 86vh;
-    background-image: url("./img/imagenInicio.jpg");
+    background-image: url("./img/fondo.png");
     background-position-x: center;
     background-size: cover;
     display: flex;
@@ -138,7 +153,7 @@
 /* Footer */
 
 .footer{
-    background-color: #ED8618
+    background-color: var(--color-principal);
 }
 
 /* Media Queries */
