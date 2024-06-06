@@ -1,8 +1,8 @@
 /* Variables */
 :root {
     --color-principal: #15120E; 
-    --color-principal2: #ED8618; 
-    --color-secundario: #ED6118; 
+    --color-secundario: #ffaf02; 
+    --color-terciario: #ED6118; 
 }
 
 /* Header  */
@@ -10,20 +10,24 @@
     font-family: "Kanit", sans-serif;
     font-style: normal;
     margin-left: 6px;
-    /* padding: 0px; */
+    display: flex;
+    align-items: center;
 }
 .navbar{
     padding: 0;
 }
 #barraMenu{
     background-color: var(--color-principal);
-    padding: 10px;
 }
 #barraMenu a{
     color: white;
 }
 #barraMenu ul{
     color: white;
+}
+
+#menuToggle{
+    background-color: var(--color-secundario);
 }
 .menu{
     font-weight: 500;
@@ -49,21 +53,24 @@
     height: 86vh;
     background-image: url("./img/fondo.png");
     background-position-x: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
+    display: grid;
 }
 
 .contenedorSecundario{
     color: white;
     width: 50%;
     height: 50%;
-    background: rgba(227, 118, 16, 0.9); 
+    background: rgba(0, 0, 0, 0.53); 
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 100px;
 }
 
 .contenedorFoto{
@@ -163,6 +170,9 @@
     }
 }
 @media screen and (max-width: 720px){
+    #navbarNav{
+        margin-left: 10px;
+    }
     #botonIntegrantes{
         width: 100%;   
     }
