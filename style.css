@@ -133,6 +133,7 @@
 #botonIntegrantes:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
+    text-decoration: underline;
 }
 
 /* Main Avances */
@@ -140,10 +141,11 @@
 .contenedorAvancesPrincipal{
     height: auto;
     padding: 20px;
-    background-image: url("./img/fondo.png");
+    /* background-image: url("./img/fondo.png");
     background-position-x: center;
     background-size: cover;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +172,8 @@
     height: 90%;
     width: auto;
     background-size: cover;
+    border-radius: 5%;
+    margin-bottom: 10px;
 }
 #botonAvances{
     background-color: var(--color-secundario);
@@ -180,16 +184,14 @@
 #botonAvances:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
+    text-decoration: underline;
 }
 #logoAvances{
     width: 450px;
     height: 400px;
 }
-#divPaletaImagenes{
-
-}
 .paletaImagenes{
-    width: 15%;
+    width: 10%;
     margin: 0 10px;
     /* height: 70px; */
 }
@@ -234,6 +236,7 @@
 #botonJuegos:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
+    text-decoration: underline;
 }
 .textJuegos{
     font-size: 1.04rem;
@@ -258,8 +261,23 @@
     .contenedorJuegosSecundario{
         width: 90%;
     }
+    .imagenAvances{
+        height: auto;
+        width: 100%;
+    }
+    #logoAvances{
+        width: 50%;
+        height: 50%;
+    }
+    .paletaImagenes{
+        width: 15%;
+    }
 }
 @media screen and (max-width: 900px){
+    #navbarNav{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
     .contenedorSecundario{
         width: 80%;
     }
@@ -272,11 +290,47 @@
     .contenedorJuegosSecundario{
         height: 90%;
     }
-}
-@media screen and (max-width: 730px){
-    #navbarNav{
-        margin-left: 10px;
+    #divPaletaImagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
     }
+    .paletaImagenes{
+        margin: 5px 0;
+        width: 100px;
+        /* height: ; */
+    }
+}
+@media screen and (max-width: 760px){
+    .imagenAvances{
+        height: auto;
+        width: 100%;
+    }
+    #logoAvances{
+        width: 60%;
+        height: 60%;
+    }
+    .paletaImagenes{
+        /* width: 30%; */
+    }
+    #divPublicoObjetivo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenedorIntegrantesPrincipal{
+        background-color: var(--color-secundario);
+        background-image: none;
+    }
+    .contenedorJuegosPrincipal{
+        background-color: var(--color-secundario);
+        background-image: none;
+    }
+}
+
+
+
+@media screen and (max-width: 730px){
     #botonIntegrantes{
         width: 100%;   
     }
@@ -305,5 +359,12 @@
     .contenedorSecundario{
         width: 90%;
         padding: 10px;
+    }
+    .contenedorAvancesSecundario{
+        padding: 0px;
+    }
+    #logoAvances{
+        width: 100%;
+        height: 100%;
     }
 }
