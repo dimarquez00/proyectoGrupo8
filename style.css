@@ -263,6 +263,16 @@
     border-color: var(--color-terciario);
     text-decoration: underline;
 }
+#btnContacto{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+}
+#btnContacto:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
 /* Footer */
 
 .footer{

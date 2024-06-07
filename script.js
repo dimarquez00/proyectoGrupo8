@@ -1,9 +1,14 @@
 $(document).ready(function(){
-    $('#saveUsername').click(function(){
+    $('#saveUsername').click(function(event){
+        event.preventDefault();
         var username = $('#username').val();
-        localStorage.setItem('username', username);
-        alert('Nombre de usuario guardado');
-        // Redireccionar a la siguiente página
-        window.location.href = 'pagina2.html';
+        if(username.trim() === "") {
+            username = "Usuario";
+            localStorage.setItem('username', username);
+        } else {
+            localStorage.setItem('username', username);
+            event.preventDefault();
+            $('#myModal').modal('show');
+        }
     });
 });

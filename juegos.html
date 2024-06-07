@@ -62,7 +62,7 @@
                 <div class="col" id="colContacto">
                   <form>
                     <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre / Nick</label>
+                      <label for="nombre" class="form-label textJuegos">Nombre / Nick</label>
                       <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre">
                     </div>
                     <button type="submit" class="btn btn-primary mt-0" id="saveUsername">Guardar</button>
@@ -109,6 +109,21 @@
           </div>
         </div>
       </section>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+            </div>
+            <div class="modal-body">
+              <p>Su nombre se guardo correctamente </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary mt-1" id="btnContacto" data-dismiss="modal" onclick="window.location.reload()">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="text-center text-lg-start text-white footer">
       <div class="container p-4 pb-0">

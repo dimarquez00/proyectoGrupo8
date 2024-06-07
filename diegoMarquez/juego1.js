@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    // Obtener username
+    var username = localStorage.getItem('username');
+    if (username) {
+        $('#welcomeMessage').text('Bienvenido, ' + username + '!');
+    } else {
+        $('#welcomeMessage').text('Nombre de usuario no encontrado.');
+    }
+
+    // Juego de memoria
     var firstCard = null;
     var secondCard = null;
     var lockBoard = false;
