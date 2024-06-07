@@ -1,7 +1,8 @@
 $(document).ready(function(){
+    var username = "Usuario";
     $('#saveUsername').click(function(event){
         event.preventDefault();
-        var username = $('#username').val();
+        username = $('#username').val();
         if(username.trim() === "") {
             username = "Usuario";
             localStorage.setItem('username', username);

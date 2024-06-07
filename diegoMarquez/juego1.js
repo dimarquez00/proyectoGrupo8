@@ -1,6 +1,9 @@
 $(document).ready(function() {
     // Obtener username
     var username = localStorage.getItem('username');
+    if (!username || username.trim() === "") {
+        username = "Usuario";
+    }
     if (username) {
         $('#welcomeMessage').text('Bienvenido, ' + username + '!');
     } else {
@@ -55,7 +58,9 @@ $(document).ready(function() {
                 setTimeout(resetCards, 1000, false);
             }
         }
+        // Mensaje de felicitaciónes
         if ($('.card.flipped').length === $('.card').length) {
+            $('#exampleModalLabel').text('Felicitaciones ' + username + '!');
             $('#myModal').modal('show');
         }
     });
