@@ -192,7 +192,7 @@
 
 /* Main Juegos */
 .contenedorJuegosPrincipal{
-    height: 86vh;
+    height: 93vh;
     background-image: url("./img/fondo.png");
     background-position-x: center;
     background-size: cover;
@@ -236,6 +236,33 @@
     font-size: 1.04rem;
 }
 
+#divContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#rowContacto{
+    width: 30%;
+}
+#colContacto{
+    /* margin: 10px; */
+}
+
+#saveUsername{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#saveUsername:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
 /* Footer */
 
 .footer{
@@ -254,6 +281,7 @@
     }
     .contenedorJuegosSecundario{
         width: 90%;
+        height: 90%;
     }
     .imagenAvances{
         height: auto;
@@ -265,6 +293,9 @@
     }
     .paletaImagenes{
         width: 15%;
+    }
+    #rowContacto{
+        width: 50%;
     }
 }
 @media screen and (max-width: 900px){
@@ -287,7 +318,13 @@
         height: 70%;
         padding: 5px;
     }
+    .contenedorJuegosPrincipal{
+        height: auto;
+        width: auto;
+        padding: 20px;
+    }
     .contenedorJuegosSecundario{
+        height: 90%;
         height: 90%;
     }
     #divPaletaImagenes{
@@ -323,9 +360,10 @@
         background-color: var(--color-secundario);
         background-image: none;
     }
+    #rowContacto{
+        width: 60%;
+    }
 }
-
-
 
 @media screen and (max-width: 730px){
     #botonIntegrantes{
@@ -363,5 +401,8 @@
     #logoAvances{
         width: 100%;
         height: 100%;
+    }
+    #rowContacto{
+        width: 100%;
     }
 }
