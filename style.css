@@ -245,9 +245,6 @@
 #rowContacto{
     width: 30%;
 }
-#colContacto{
-    /* margin: 10px; */
-}
 
 #saveUsername{
     background-color: var(--color-secundario);
