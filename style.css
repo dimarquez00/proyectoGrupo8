@@ -192,7 +192,7 @@
 
 /* Main Juegos */
 .contenedorJuegosPrincipal{
-    height: 93vh;
+    height: auto;
     background-image: url("./img/fondo.png");
     background-position-x: center;
     background-size: cover;
@@ -200,6 +200,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 .contenedorJuegosSecundario{
@@ -270,7 +271,21 @@
     border-color: var(--color-terciario);
     text-decoration: underline;
 }
+
+.rowTabla{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+table tr td, table tr th{
+    background-color: rgba(21, 18, 14, 0.96) !important;
+}
+
 /* Footer */
+
 
 .footer{
     background-color: var(--color-principal);

@@ -202,6 +202,11 @@
     .nav-item{
         margin-left: 20px;
     }
+}
+@media screen and (max-width: 1000px){
+    .navbar-collapse{
+        margin-bottom: 10px;
+    }
 
 }
 @media screen and (max-width: 768px){

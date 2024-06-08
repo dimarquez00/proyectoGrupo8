@@ -5,9 +5,9 @@ $(document).ready(function() {
         username = "Usuario";
     }
     if (username) {
-        $('#welcomeMessage').text('Bienvenido, ' + username + '!');
+        $('#welcomeMessage').text('Bienvenido/a ' + username );
     } else {
-        $('#welcomeMessage').text('Nombre de usuario no encontrado.');
+        $('#welcomeMessage').text('Bienvenido Usuario');
     }
 
     // Juego de memoria
@@ -62,6 +62,10 @@ $(document).ready(function() {
         if ($('.card.flipped').length === $('.card').length) {
             $('#exampleModalLabel').text('Felicitaciones ' + username + '!');
             $('#myModal').modal('show');
+            // Contador de juegos ganados
+            var gamesWon = localStorage.getItem(username + '_gamesWon') || 0;
+            gamesWon++;
+            localStorage.setItem(username + '_gamesWon', gamesWon);
         }
     });
 
