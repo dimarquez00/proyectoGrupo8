@@ -123,13 +123,35 @@
     background-size: cover;
 }
 
-#botonIntegrantes{
+#botonIntegrantesDiego{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     margin-top: 15px;
     color: black;
 }
-#botonIntegrantes:hover{
+#botonIntegrantesDiego:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonIntegrantesCamila{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    margin-top: 15px;
+    color: black;
+}
+#botonIntegrantesCamila:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonIntegrantesIan{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    margin-top: 15px;
+    color: black;
+}
+#botonIntegrantesIan:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
@@ -391,7 +413,13 @@ table tr td, table tr th{
 }
 
 @media screen and (max-width: 730px){
-    #botonIntegrantes{
+    #botonIntegrantesDiego{
+        width: 100%;   
+    }
+    #botonIntegrantesCamila{
+        width: 100%;   
+    }
+    #botonIntegrantesIan{
         width: 100%;   
     }
     .contenedorSecundario{
