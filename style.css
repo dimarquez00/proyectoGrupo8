@@ -252,7 +252,7 @@
     width: 50%;
     margin-bottom: 10px;
 }
-#botonJuegos{
+#botonJuegos1{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     color: black;
@@ -261,7 +261,35 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-#botonJuegos:hover{
+#botonJuegos1:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonJuegos2{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonJuegos2:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonJuegos3{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonJuegos3:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
