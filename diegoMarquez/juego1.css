@@ -47,21 +47,22 @@
 }
 /* Main Inicio */
 .contenedorPrincipal{
-    height: 110vh;
+    height: auto;
+    padding: 3rem;
     background-image: url("../img/fondo.png");
     background-position-x: center;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .contenedorSecundario{
     color: white;
     width: 60%;
-    height: 90%;
+    height: auto;
     background: rgba(0, 0, 0, 0.53); 
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +70,7 @@
 }
 .contenedorTexto{
     margin-left: 20px;
+    width: 100;
     font-size: 1.2rem;
 }
 .contenedorTexto p a{
@@ -164,6 +166,9 @@
     justify-content: center;
 }
 
+#welcomeMessage {
+    word-wrap: break-word;
+}
 
 /* Cartas Juego */
 #game-memory img{
@@ -183,6 +188,16 @@
     border-color: var(--color-terciario);
     text-decoration: underline;
 }
+#btnPuntaje{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+}
+#btnPuntaje:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
 
 /* Footer */
 
@@ -192,10 +207,6 @@
 
 /* Media Queries */
 @media screen and (max-width: 1425px){
-    .contenedorPrincipal{
-        height: 150vh;
-
-    }
     .contenedorSecundario{
         width: 80%;
     }
@@ -218,21 +229,25 @@
         height: 60%;
         padding: 15px;
     }
+    #señalDescripcion{
+        width: 85%;
+        height: 280px;
+    }	
 }
 @media screen and (max-width: 425px){
     .contenedorSecundario{
         width: 90%;
-        padding: 10px;
+        padding: 25px;
     }
     .contenedorTexto ul{
-        padding-left: 5px;
+        padding-left: 0px;
     }
     #memory-result{
         width: 95%;
         height: 80px;
     }	
     #señalDescripcion{
-        width: 95%;
-        height: 250px;
-    }	
+        width: 90%;
+        height: 380px;
+    }
 }

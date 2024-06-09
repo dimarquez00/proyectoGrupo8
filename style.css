@@ -343,11 +343,11 @@ table tr td, table tr th{
     .contenedorJuegosPrincipal{
         height: auto;
         width: auto;
-        padding: 20px;
+        padding: 10px;
     }
     .contenedorJuegosSecundario{
         height: 90%;
-        height: 90%;
+        padding: 10px;
     }
     #divPaletaImagenes{
         display: flex;
@@ -359,6 +359,9 @@ table tr td, table tr th{
         margin: 5px 0;
         width: 100px;
         /* height: ; */
+    }
+    .rowTabla{
+        width: 100%;
     }
 }
 @media screen and (max-width: 760px){

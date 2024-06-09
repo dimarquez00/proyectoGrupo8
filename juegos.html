@@ -44,7 +44,7 @@
     <main>
       <section class="contenedorJuegosPrincipal">
         <div class="contenedorJuegosSecundario">
-          <div class="container p-4 pb-0 w-60 containerDefault containerJuegos">
+          <div class="container p-4 containerDefault containerJuegos">
             <div class="row">
               <h2 class="mb-4 font-weight-bold">Juegos</h2>
               <p class="mb-4">Descripción breve, dirigida al público sobre las características de los temas que
@@ -63,7 +63,7 @@
                   <form>
                     <div class="mb-3">
                       <label for="nombre" class="form-label textJuegos">Nombre / Nick</label>
-                      <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre">
+                      <input type="text" maxlength="30" class="form-control" id="username" placeholder="Ingrese su nombre">
                     </div>
                     <button type="submit" class="btn btn-primary mt-0" id="saveUsername">Guardar</button>
                   </form>
@@ -103,17 +103,17 @@
                 <thead class="tablaDiseño">
                   <tr class="tablaDiseño">
                     <th scope="col" class="tablaDiseño">Ranking</th>
-                    <th scope="col" class="tablaDiseño">Nombre de usuario</th>
-                    <th scope="col" class="tablaDiseño">Juegos ganados</th>
+                    <th scope="col" class="tablaDiseño">Usuario</th>
+                    <th scope="col" class="tablaDiseño">Puntaje</th>
                   </tr>
                 </thead>
                 <tbody>
                   <!-- Las filas de la tabla se agregarán aquí con JavaScript -->
-                  <tr"><td></td><td></td><td></td></tr>
-                  <tr><td></td><td></td><td></td></tr>
-                  <tr><td></td><td></td><td></td></tr>
-                  <tr><td></td><td></td><td></td></tr>
-                  <tr"><td></td><td></td><td></td></tr>
+                  <tr><td>#1</td><td></td><td></td></tr>
+                  <tr><td>#2</td><td></td><td></td></tr>
+                  <tr><td>#3</td><td></td><td></td></tr>
+                  <tr><td>#4</td><td></td><td></td></tr>
+                  <tr><td>#5</td><td></td><td></td></tr>
                 </tbody>
             </table>
             </div>

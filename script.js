@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // Guarda nombre de usuario en localStorage
     var username = "Usuario";
     $('#saveUsername').click(function(event){
         event.preventDefault();
@@ -12,9 +13,7 @@ $(document).ready(function(){
             $('#myModal').modal('show');
         }
     });
-    // Supongamos que esta función se llama cuando la página se carga
-    // Supongamos que esta función se llama cuando la página se carga
-    // Supongamos que esta función se llama cuando la página se carga
+    // Cuando se carga la pagina rellena tabla de ranking
     function onLoad() {
         var table = document.getElementById('rankingTable');
         var rankings = [];
