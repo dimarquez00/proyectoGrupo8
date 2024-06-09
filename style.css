@@ -332,6 +332,16 @@
     border-color: var(--color-terciario);
     text-decoration: underline;
 }
+#btnReiniciar{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+}
+#btnReiniciar:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
 
 .rowTabla{
     width: 90%;
