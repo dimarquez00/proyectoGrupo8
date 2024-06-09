@@ -192,13 +192,24 @@
     border-radius: 5%;
     margin-bottom: 10px;
 }
-#botonAvances{
+#botonAvances1{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     width: 125px;
     color: black;
 }
-#botonAvances:hover{
+#botonAvances1:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonAvances2{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    width: 125px;
+    color: black;
+}
+#botonAvances2:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
