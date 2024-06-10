@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./juego2.js"></script>
     <title>Juego Individual - Proyecto Grupo 8</title>
 </head>
 <body>
@@ -46,6 +45,20 @@
         <div class="contenedorTexto">
           <h1 class="mt-3 mb-4 font-weight-bold">Juego de Ahorcado con Señales de Tráfico</h1>
         </div>
+        <div class="imageToGuessContainer">
+            <img id="imageToGuess" src="" alt="Imagen para adivinar">
+            <p class="hiddenWord"></p>
+            <p type="text"> Introduzca la letra</p>
+            <input class="letterInput" type="text" maxlength="1"> <br>
+            <button id="evaluateButton">Verificar letra</button>
+        </div>
+            <div class="ahorcadoContainer">
+                <img id="imagenAhorcado" src="./img/ahorcado/0.jpg" alt="">
+            </div>
+        <div >
+
+        </div>
+        
         
 
   </main>
@@ -110,5 +123,6 @@
       </section>
     </div>
   </footer>
+  <script src="./juego2.js"></script>
 </body>
 </html>

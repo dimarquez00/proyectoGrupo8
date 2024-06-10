@@ -63,7 +63,7 @@
     background: rgba(0, 0, 0, 0.53); 
     padding: 20px;
     display: flex;
-    justify-content: center;
+
     align-items: center;
     flex-direction: column;
 }
@@ -188,6 +188,14 @@
 
 .footer{
     background-color: var(--color-principal);
+}
+
+#imagenAhorcado{
+    width: 200px;
+}
+#imageToGuess{
+    width: 150px; /* Puedes ajustar el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Media Queries */
