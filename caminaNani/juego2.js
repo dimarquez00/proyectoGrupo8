@@ -15,7 +15,7 @@ const items = [
   { image: "./img/señales/contramano.jpg", word: "contramano", meaning: "Esta señal indica que la vía ante la cual se encuentra tiene sentido de circulación opuesto y por lo tanto no se puede ingresar."},
    { image: "./img/señales/escolares.jpg", word: "escolares", meaning: "Esta señal nos indica que hay una escuela cerca y que debemos estar atentos porque puede haber muchos niños caminando por allí" },
    { image: "./img/señales/noAvanzar.jpg", word: "no avanzar", meaning:" Esta señal nos dice que debemos detenernos y no seguir adelante" },
-  {image: "./img/señales/pare.jpg", word: "pare", meaning: "Esta señal nos indica que debemos detenernos por completo."},
+  {image: "./img/señales/PARE.jpg", word: "pare", meaning: "Esta señal nos indica que debemos detenernos por completo."},
   {
     image: "./img/señales/noAdelantar.jpg",
     word: "no adelantar",
