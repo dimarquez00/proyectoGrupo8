@@ -123,13 +123,35 @@
     background-size: cover;
 }
 
-#botonIntegrantes{
+#botonIntegrantesDiego{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     margin-top: 15px;
     color: black;
 }
-#botonIntegrantes:hover{
+#botonIntegrantesDiego:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonIntegrantesCamila{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    margin-top: 15px;
+    color: black;
+}
+#botonIntegrantesCamila:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonIntegrantesIan{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    margin-top: 15px;
+    color: black;
+}
+#botonIntegrantesIan:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
@@ -170,13 +192,24 @@
     border-radius: 5%;
     margin-bottom: 10px;
 }
-#botonAvances{
+#botonAvances1{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     width: 125px;
     color: black;
 }
-#botonAvances:hover{
+#botonAvances1:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonAvances2{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    width: 125px;
+    color: black;
+}
+#botonAvances2:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
@@ -219,7 +252,7 @@
     width: 50%;
     margin-bottom: 10px;
 }
-#botonJuegos{
+#botonJuegos1{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     color: black;
@@ -228,7 +261,35 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-#botonJuegos:hover{
+#botonJuegos1:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonJuegos2{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonJuegos2:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#botonJuegos3{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonJuegos3:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
@@ -267,6 +328,16 @@
     color: black;
 }
 #btnContacto:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+#btnReiniciar{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: black;
+}
+#btnReiniciar:hover{
     background-color: var(--color-terciario);
     border-color: var(--color-terciario);
     text-decoration: underline;
@@ -391,7 +462,13 @@ table tr td, table tr th{
 }
 
 @media screen and (max-width: 730px){
-    #botonIntegrantes{
+    #botonIntegrantesDiego{
+        width: 100%;   
+    }
+    #botonIntegrantesCamila{
+        width: 100%;   
+    }
+    #botonIntegrantesIan{
         width: 100%;   
     }
     .contenedorSecundario{
