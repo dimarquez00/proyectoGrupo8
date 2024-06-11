@@ -81,6 +81,18 @@ const evaluateWord = () => {
     exampleModalLabel.textContent = "¡Ganaste!";
     modalBody.innerHTML = "";
 
+    // Obtener username
+    var username = localStorage.getItem('username');
+    if (!username || username.trim() === "") {
+    username = "Usuario";
+        }
+
+// Suma al ranking de juegos ganados
+var gamesWon = localStorage.getItem(username + '_gamesWon') || 0;
+gamesWon++;
+localStorage.setItem(username + '_gamesWon', gamesWon);
+
+
     const congratulationsMessage = document.createElement("p");
     congratulationsMessage.textContent = "¡Felicitaciones, " + username + "!";
 
