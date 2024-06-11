@@ -11,13 +11,13 @@ const updateAhorcadoImage = (mistakes) => {
 };
 
 const items = [
-   //{ image: "./img/señales/bicicleta.png", word: "no circular", meaning: "Esta señal significa que no está permitido que las bicicletas circulen por esa área" },
-  //{ image: "./img/señales/contramano.jpg", word: "contramano", meaning: "Esta señal indica que la vía ante la cual se encuentra tiene sentido de circulación opuesto y por lo tanto no se puede ingresar."},
-   //{ image: "./img/señales/escolares.jpg", word: "escolares", meaning: "Esta señal nos indica que hay una escuela cerca y que debemos estar atentos porque puede haber muchos niños caminando por allí" },
-   //{ image: "./img/señales/noAvanzar.jpg", word: "no avanzar", meaning:" Esta señal nos dice que debemos detenernos y no seguir adelante" },
+   { image: "./img/señales/bicicleta.png", word: "no circular", meaning: "Esta señal significa que no está permitido que las bicicletas circulen por esa área" },
+  { image: "./img/señales/contramano.jpg", word: "contramano", meaning: "Esta señal indica que la vía ante la cual se encuentra tiene sentido de circulación opuesto y por lo tanto no se puede ingresar."},
+   { image: "./img/señales/escolares.jpg", word: "escolares", meaning: "Esta señal nos indica que hay una escuela cerca y que debemos estar atentos porque puede haber muchos niños caminando por allí" },
+   { image: "./img/señales/noAvanzar.jpg", word: "no avanzar", meaning:" Esta señal nos dice que debemos detenernos y no seguir adelante" },
   { image: "./img/señales/noEstacionar.jpg", word: "prohibido estacionar", meaning:"Esta señal nos dice que no podemos estacionar nuestros coches en ese lugar." },
   { image: "./img/señales/noRuidosMolestos.jpg", word: "no ruidos molestos", meaning:"Esta señal nos indica que no debemos hacer ruidos fuertes que puedan molestar a otras personas que viven cerca" },
-  //{image: "./img/señales/pare.jpg", word: "pare", meaning: "Esta señal nos indica que debemos detenernos por completo."},
+  {image: "./img/señales/pare.jpg", word: "pare", meaning: "Esta señal nos indica que debemos detenernos por completo."},
   {
     image: "./img/señales/noAdelantar.jpg",
     word: "no adelantar",
@@ -40,13 +40,11 @@ const selectedItem = items[Math.floor(Math.random() * items.length)];
 const secretWord = selectedItem.word;
 const meaning = selectedItem.meaning;
 let hiddenWord = secretWord.replace(/[^\s]/g, "_ ").replaceAll("  ", "   ");
-console.log(secretWord);
-console.log(hiddenWord);
+
 document.querySelector(".hiddenWord").innerHTML = hiddenWord.replaceAll(
   "  ",
   " &nbsp;"
 );
-console.log(hiddenWord);
 errorCounter = 0;
 const maxErrors = 7;
 
