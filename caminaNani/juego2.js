@@ -11,16 +11,17 @@ const updateAhorcadoImage = (mistakes) => {
 };
 
 const items = [
-  // { image: "./img/señales/bicicleta.png", word: "prohibicion de circulacion", meaning: "Esta señal significa que no está permitido que las bicicletas circulen por esa área" },"
+   //{ image: "./img/señales/bicicleta.png", word: "no circular", meaning: "Esta señal significa que no está permitido que las bicicletas circulen por esa área" },
   //{ image: "./img/señales/contramano.jpg", word: "contramano", meaning: "Esta señal indica que la vía ante la cual se encuentra tiene sentido de circulación opuesto y por lo tanto no se puede ingresar."},
-  // { image: "./img/señales/escolares.jpg", word: "escolares", meaning: "Esta señal nos indica que hay una escuela cerca y que debemos estar atentos porque puede haber muchos niños caminando por allí" },
-  // { image: "./img/señales/noAvanzar.jpg", word: "no avanzar", meaning:" Esta señal nos dice que debemos detenernos y no seguir adelante" },
-  //{ image: "./img/señales/noEstacionar.jpg", word: "prohibido estacionar", meaning:"Esta señal nos dice que no podemos estacionar nuestros coches en ese lugar." },
-  //{ image: "./img/señales/noRuidosMolestos.jpg", word: "no ruidos molestos", meaning:"Esta señal nos indica que no debemos hacer ruidos fuertes que puedan molestar a otras personas que viven cerca" },
+   //{ image: "./img/señales/escolares.jpg", word: "escolares", meaning: "Esta señal nos indica que hay una escuela cerca y que debemos estar atentos porque puede haber muchos niños caminando por allí" },
+   //{ image: "./img/señales/noAvanzar.jpg", word: "no avanzar", meaning:" Esta señal nos dice que debemos detenernos y no seguir adelante" },
+  { image: "./img/señales/noEstacionar.jpg", word: "prohibido estacionar", meaning:"Esta señal nos dice que no podemos estacionar nuestros coches en ese lugar." },
+  { image: "./img/señales/noRuidosMolestos.jpg", word: "no ruidos molestos", meaning:"Esta señal nos indica que no debemos hacer ruidos fuertes que puedan molestar a otras personas que viven cerca" },
+  //{image: "./img/señales/pare.jpg", word: "pare", meaning: "Esta señal nos indica que debemos detenernos por completo."},
   {
-    image: "./img/señales/pare.jpg",
-    word: "pare",
-    meaning: "Esta señal nos indica que debemos detenernos por completo.",
+    image: "./img/señales/noAdelantar.jpg",
+    word: "no adelantar",
+    meaning: "Esta señal nos indica que no debemos adelantar al auto ue esta adelante.",
   },
 ];
 
@@ -81,28 +82,22 @@ const evaluateWord = () => {
   // Verifica si la palabra oculta ha sido completada
   if (!hiddenWord.includes("_")) {
     evaluateButton.disabled = true;
-
-    // Cambia el título del modal
     exampleModalLabel.textContent = "¡Ganaste!";
-
-    // Limpia el contenido actual del cuerpo del modal
     modalBody.innerHTML = "";
 
-    // Agrega el mensaje de felicitaciones al cuerpo del modal
     const congratulationsMessage = document.createElement("p");
     congratulationsMessage.textContent = "¡Felicitaciones, " + username + "!";
 
-    // Agrega la palabra seleccionada y su significado al cuerpo del modal
     const wordMessage = document.createElement("p");
-    wordMessage.textContent = "La palabra era: " + secretWord + ". " + meaning;
+    wordMessage.innerHTML =
+    "La palabra era: " + secretWord + ".<br>" + meaning;
 
-    // Agrega los elementos al cuerpo del modal
     modalBody.appendChild(congratulationsMessage);
     modalBody.appendChild(wordMessage);
 
-    // Muestra el modal
     var bootstrapModal = new bootstrap.Modal(myModal);
     bootstrapModal.show();
+
   } else if (errorCounter >= maxErrors) {
     updateAhorcadoImage(errorCounter);
     setTimeout(() => {
@@ -111,11 +106,11 @@ const evaluateWord = () => {
       modalBody.innerHTML = "";
 
       const congratulationsMessage = document.createElement("p");
-      congratulationsMessage.textContent = "¡Felicitaciones, " + username + "!";
+      congratulationsMessage.textContent = "¡Oh no, " + username + "! Has perdido. ¡Inténtalo de nuevo!";
 
       const wordMessage = document.createElement("p");
-      wordMessage.textContent =
-        "La palabra era: " + secretWord + ". " + meaning;
+      wordMessage.innerHTML =
+        "La palabra era: " + secretWord + ".<br>" + meaning;
 
       modalBody.appendChild(congratulationsMessage);
       modalBody.appendChild(wordMessage);
