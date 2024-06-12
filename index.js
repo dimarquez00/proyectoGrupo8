@@ -52,16 +52,16 @@ var foot = `
                 Links
               </h6>
               <p>
-                <a class="text-white" href="./index.html">Inicio</a>
+                <a class="text-white" href="${hrefPath}index.html">Inicio</a>
               </p>
               <p>
-                <a class="text-white" href="./integrantes.html">Integrantes</a>
+                <a class="text-white" href="${hrefPath}integrantes.html">Integrantes</a>
               </p>
               <p>
-                <a class="text-white" href="./avances.html">Avances</a>
+                <a class="text-white" href="${hrefPath}avances.html">Avances</a>
               </p>
               <p>
-                <a class="text-white" href="./juegos.html">Juegos</a>
+                <a class="text-white" href="${hrefPath}juegos.html">Juegos</a>
               </p>
             </div>
   
