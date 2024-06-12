@@ -1,0 +1,196 @@
+/* Variables */
+:root {
+    --color-principal: #15120E; 
+    --color-secundario: #ffaf02; 
+    --color-terciario: #FF8B02; 
+}
+
+/* Header  */
+.headerText{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    padding: 0;
+}
+#barraMenu{
+    background-color: var(--color-principal);
+}
+#barraMenu a{
+    color: white;
+}
+#barraMenu ul{
+    color: white;
+}
+
+#menuToggle{
+    background-color: var(--color-secundario);
+}
+.menu{
+    font-weight: 500;
+    margin-left: auto;
+}
+.linksMenu:hover{
+    text-decoration: underline;
+}
+
+/* Main */
+.row{
+    justify-content: center;
+}
+.card-title{
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+/* Main Inicio */
+.contenedorPrincipal{
+    height: auto;
+    padding: 3rem;
+    background-image: url("../img/fondo.png");
+    background-position-x: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.contenedorSecundario{
+    color: white;
+    width: 60%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.53); 
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorTexto{
+    margin-left: 20px;
+    width: 100;
+    font-size: 1.2rem;
+}
+.contenedorTexto p a{
+    text-decoration: none;
+    color: #099ddc;
+}
+.contenedorTexto p a:hover{
+    text-decoration: underline;
+}
+#linkJuego{
+    color: white;
+}
+#linkJuego:hover{
+    color: rgb(225, 225, 225);
+    text-decoration: underline;
+}
+
+#botonJuegos{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: black;
+
+}
+#botonJuegos:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+
+/* Main Juego */
+
+.contenedorJuego{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pregunta{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.imagen{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+button.btn {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+button.btn:hover {
+    color: black;
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-principal);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1425px){
+    .contenedorSecundario{
+        width: 80%;
+    }
+    .nav-item{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .navbar-collapse{
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .contenedorPrincipal{
+        height: 110%;
+        padding: 20px 0;
+    }
+    .contenedorSecundario{
+        height: 60%;
+        padding: 15px;
+    }
+    #señalDescripcion{
+        width: 85%;
+        height: 280px;
+    }	
+}
+@media screen and (max-width: 425px){
+    .contenedorSecundario{
+        width: 90%;
+        padding: 25px;
+    }
+    .contenedorTexto ul{
+        padding-left: 0px;
+    }
+    #memory-result{
+        width: 95%;
+        height: 80px;
+    }	
+    #señalDescripcion{
+        width: 90%;
+        height: 380px;
+    }
+}
