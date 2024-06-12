@@ -400,6 +400,8 @@ table tr td, table tr th{
         display: flex;
         align-items: center;
         justify-content: center;
+        background-size: 150% 100%;
+
     }
     .contenedorSecundario{
         width: 80%;
