@@ -438,6 +438,9 @@ table tr td, table tr th{
     }
 }
 @media screen and (max-width: 760px){
+    .contenedorFoto img{
+        margin-top: 20px;
+    }	
     .imagenAvances{
         height: auto;
         width: 100%;
