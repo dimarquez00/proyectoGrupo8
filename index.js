@@ -4,7 +4,7 @@ var hrefPath = document.getElementById("path").attributes.hrefPath.value;
 var cad = `
 <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 pb-0">
       <div class="container-fluid" id="barraMenu">
-        <a class="navbar-brand headerText pt-0 pb-0" href="../index.html">
+        <a class="navbar-brand headerText pt-0 pb-0" href="${hrefPath}index.html">
           <img src="${imgPath}/logoVialKids.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top headerText">VialKids</a>
         <button id="menuToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
