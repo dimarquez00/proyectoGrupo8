@@ -64,9 +64,9 @@
 .contenedorSecundario{
     color: white;
     width: 50%;
-    height: 50%;
+    height: auto;
     background: rgba(0, 0, 0, 0.53); 
-    padding: 20px;
+    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
 .contenedorIntegrantesSecundario{
     color: white;
     width: 70%;
-    height: 80%;
+    height: auto;
     background: rgba(0, 0, 0, 0.53); 
     padding: 20px;
     display: flex;
@@ -370,7 +370,7 @@ table tr td, table tr th{
     .contenedorIntegrantesSecundario{
         color: white;
         width: 80%;
-        height: 70%;
+        /* height: 70%; */
     }
     .contenedorJuegosSecundario{
         width: 90%;
@@ -438,6 +438,9 @@ table tr td, table tr th{
     }
 }
 @media screen and (max-width: 760px){
+    .contenedorFoto img{
+        margin-top: 20px;
+    }	
     .imagenAvances{
         height: auto;
         width: 100%;
