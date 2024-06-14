@@ -200,7 +200,6 @@
 }
 @media screen and (max-width: 768px){
     .contenedorPrincipal{
-        height: 110%;
         padding: 20px 0;
     }
     .contenedorSecundario{
@@ -208,8 +207,6 @@
         padding: 15px;
         height: auto;
     }
-
-
     .contenedorJuego {
         flex-direction: column; /* Cambia la dirección del flex a columna */
         padding: 0;
@@ -226,12 +223,9 @@
     
 }
 @media screen and (max-width: 425px){
-    #contenedorPrincipal{
-        height: 110vh;
-    }
-    
     .contenedorSecundario{
         width: 90%;
+        padding: 20px;
     }
     .contenedorTexto ul{
         padding-left: 5px;
@@ -239,6 +233,5 @@
     #reiniciar{
         margin-bottom: 30;
         margin-top:15px
-
     }
 }

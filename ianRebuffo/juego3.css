@@ -176,6 +176,9 @@ button.btn:hover {
         width: 85%;
         height: 280px;
     }	
+    button.btn{
+        width: 200px;
+    }	
 }
 @media screen and (max-width: 425px){
     .contenedorSecundario{
